@@ -12,5 +12,5 @@ project interpreter: Virtualenv > create <br>
 
 no terminal do pycharm digite: pip install flask <br>
 
-**criar o projeto pelo py charm, pois assim ele já deixa o ambiente virtual ativo <br>
+*ao criar o projeto pelo py charm, o mesmo já deixa o ambiente virtual ativo <br>
 **caso opte pelo uso do terminal utilizar o seguinte comando para windows: .\.virtualenvs\bookstore\Scripts\activate <br>
