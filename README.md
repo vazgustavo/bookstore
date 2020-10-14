@@ -18,8 +18,8 @@ clique com o botão direito > Run 'run' <br>
 
 ### URL's:
 http://127.0.0.1:5000/books <br>
-http://127.0.0.1:5000/books/0/reserve <br>
-http://127.0.0.1:5000/client/books <br>
+http://127.0.0.1:5000/books/<id_client>/reserve <br>
+http://127.0.0.1:5000/client/<id_client>/books <br>
 
 
 *ao criar o projeto pelo py charm, o mesmo já deixa o ambiente virtual ativo <br>
