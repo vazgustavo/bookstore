@@ -8,7 +8,9 @@ suporte execução local.<br>
 * pip install Flask
 
 file > new project <br>
-project interpreter: Virtualenv > create <br>
+project interpreter: Virtualenv <br>
+project name: bookstore <br>
+> create <br>
 
 no terminal do pycharm digite: pip install flask <br>
 
