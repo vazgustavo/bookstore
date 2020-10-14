@@ -12,11 +12,14 @@ project interpreter: Virtualenv <br>
 project name: bookstore <br>
 > create <br>
 
-cole o arquivo run.py disponibilizado neste repositório para este projeto <br>
+cole os arquivos .py disponibilizado neste repositório para este projeto <br>
 no terminal do pycharm digite: pip install flask <br>
 clique com o botão direito > Run 'run' <br>
 
-### URL e Metodos:
+### URL's:
+http://127.0.0.1:5000/books <br>
+http://127.0.0.1:5000/books/0/reserve <br>
+http://127.0.0.1:5000/client/books <br>
 
 
 *ao criar o projeto pelo py charm, o mesmo já deixa o ambiente virtual ativo <br>
