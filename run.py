@@ -37,6 +37,9 @@ def returnBooksIdClient(id_cliente):
         if books[i].idCliente == id_cliente:
             books[i].total = checkDelay(books[i].valor, books[i].diasEmAtraso)
             return json.dumps(books[i], default=lambda x: x.__dict__)
+        else:
+            response = {'status': 'erro', 'mensagem': 'livro nao esta emprestado'}
+            return jsonify(response)
 
 
 @app.route('/books/<int:id>/reserve', methods=['PUT'])
