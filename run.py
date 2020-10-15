@@ -31,7 +31,7 @@ books = [book, book1, book2, book3, book4]
 clients = [client, client1, client2]
 
 
-@app.route('/client/<int:id_cliente>/books')
+@app.route('/client/<int:id_cliente>/books', methods=['GET'])
 def returnBooksIdClient(id_cliente):
     for i in range(len(books)):
         if books[i].idCliente == id_cliente:
@@ -39,14 +39,14 @@ def returnBooksIdClient(id_cliente):
             return json.dumps(books[i], default=lambda x: x.__dict__)
 
 
-@app.route('/books/<int:id>/reserve', methods=['GET'])
+@app.route('/books/<int:id>/reserve', methods=['PUT'])
 def reserveBook(id):
     books[id].disponibilidade = False
     response = {'status': 'alterado', 'mensagem': 'livro reservado com sucesso'}
     return jsonify(response)
 
 
-@app.route('/books')
+@app.route('/books', methods=['GET'])
 def returnAllBooks():
     return json.dumps(books, default=lambda x: x.__dict__)
 
